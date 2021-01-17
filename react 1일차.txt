@@ -1,0 +1,36 @@
+React강의(1회~10회)
+*node.js 설치 방법
+-node.js 홈페이지 들어가서 다운로드(https://nodejs.org/ko/)
+-설치 확인방법 -> 윈도우+R -> cmd -> node -v입력 ->버전체크
+
+*npm이용 react 설치
+-(sudo) npm install -g create-react-app
+-설치 확인 -> create-react-app -V
+
+* npx는 한번 설치하고 지워지는 설치법이고 npm은 설치하면 유지된다.
+
+*react폴더 만들기
+-폴더명(react-app)으로 만들기
+-cmd->cd 폴더경로 -> create-react-app . 입력
+
+*public - index.html이 있는곳 => <div id="root"></div> 이 부분이 중요하다.
+-컴포넌트들은 root안으로 들어간다.
+*src - 소스라고 되어있는 디렉토리 안의 파일들
+-엔트리파일(진입파일=index.js)
+
+<App />이 컴포넌트다. 
+
+*컴포넌트 설정방식은 function 방식과 class 방식이 있다.
+
+*css는 index.css를 수정하면 된다.
+
+*실제로 서비스를 제공할때에는 build 안에 있는 파일을 쓴다.(배포할때 쓰임)
+-build안의 파일들은 react에서 기본 제공하는 정보들을 어느정도 축약시켜서 파일크기가 작기때문이다.
+-npm run build 입력하면됨.
+
+*배포하는법
+npx serve -s build 
+
+*시멘틱태그 : 의미론적으로 정의하는데 필요하다.
+-<header>,<nav>,<article>
+
