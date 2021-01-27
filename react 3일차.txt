@@ -1,0 +1,15 @@
+React강의(21회~26회)
+
+*function(e){} 안에서 this를 사용할때 안되면 함수가 끝난 진후 .bind(this)를 붙여줘라.
+-해당 document의 this를 인식하지 못한다.
+-bind(obj)는 해당 function 안의 this 값을 obj로 바꾸어준다.
+
+*this.state.mode = 'welcome'; 으로 하면 리액트는 인식을 못한다.
+-this.setState({ mode:'welcome'}); 으로 해야 인식하고 바꾼다.
+
+
+
+
+
+
+
