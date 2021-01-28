@@ -1,0 +1,21 @@
+React강의(27회~30회)
+
+*props vs state 차이점
+-props는 read-only 이다.
+-state는 내부적으로 쓴다.
+상위가 하위를 변경할때는 props를 쓰고
+하위가 상위를 변경할때는 event를 쓴다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
