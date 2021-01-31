@@ -1,0 +1,32 @@
+React강의(31회~35회)
+
+*배열에 데이터 추가
+push는 원본을 바꾼다
+concat은 원본을 건들지 않고 실행된다.
+
+*shouldComponentUpdate()
+함수안에 render()를 작동시킬지 말지 여부를 판단.
+render()이전에 shouldComponentUpdate()가 실행된다.
+shouldComponentUpdate() 리턴값이 false면 render()가 실행되지 않는다.
+    if(this.props.data === newProps.data){
+      return false;
+    }
+      return true;
+단, push를 이용해서 원본의 데이터를 바꾸면 무조건 false로 들어가서 
+ concat을 이용해서 원본의 데이터를 건드리지 못하게한다.
+
+*Array.from(배열)
+배열을 복제할 수 있다.
+ex) var newContents = Array.from(this.state.contents);
+
+*Object.assign({},a)
+객체를 복제할 수 있다.
+{}안에 데이터를 넣으면 넣은 데이터와 a의 데이터가 합친걸 복제해 준다.
+
+*immutable 불변
+react의 immutable을 찾아서 기존의 데이터를 건드리지 않고 복제해서 보내준다.
+
+
+
+
+
